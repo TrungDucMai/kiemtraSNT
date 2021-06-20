@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt('nhap so vao day')
+    function isPrime (number){
+       if(number<2){
+       return -1
+       }
+       let SNTT =true;
+        for (let i = 2; i <number ; i++) {
+            if(number%i==0){
+                return SNTT =false;
+            }
+        }return SNTT;
+    }
+    let n =2;
+    while (n<10000){
+if(isPrime(n)){
+    document.write(+n+";");
+}n++
+    }
+</script>
+</body>
+</html>
