@@ -7,17 +7,26 @@
 <body>
 <script>
 
-    let a = +prompt('nhap so vao day');
-
     function checking(number) {
-        if (number > 0) {
-            alert('true');
-        }  else {
-            alert('false');
-        }
+        let check = true;
+        if (number<0) {check= false}
+
+    if(check){alert(number+'la so duong')}
+    else {alert(number + 'KHONG la so duong')}
     };
-   let b =checking(a);
-   alert(b)
+    let a = prompt('nhap so vao day');
+    let b= Math.floor(a)
+    checking(b);
+
+
+   //      if (number > 0) {
+   //          alert('true');
+   //      }  else {
+   //          alert('false');
+   //      }
+   //  };
+   // let b =checking(a);
+   // alert(b)
 </script>
 </body>
 </html>
